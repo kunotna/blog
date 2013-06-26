@@ -91,6 +91,7 @@ if (isset($_SERVER['KOHANA_ENV']))
  */
 Kohana::init(array(
 	'base_url'   => '/kohana/',
+    'errors'     => TRUE, //This will convert PHP errors into exceptions which are easier to handle
 ));
 
 /**
