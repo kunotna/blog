@@ -1,10 +1,12 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 
-class Controller_Base extends Controller_Template {
+class Controller_Admin extends Controller_Template {
+    
+    public $template = 'admin/base';
 
 	public function action_index()
 	{
-		$this->response->body('hello, guest!');
+        $this->template->title = 'hello, Admin!';
 	}
 
 } // End Welcome
