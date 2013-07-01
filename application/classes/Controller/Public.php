@@ -1,6 +1,6 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 
-class Controller_Public extends Controller_Template {
+class Controller_Public extends Controller_Base {
     
     public $template = 'public/base';
 
