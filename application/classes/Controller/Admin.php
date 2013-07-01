@@ -2,11 +2,11 @@
 
 class Controller_Admin extends Controller_Template {
     
-    public $template = 'admin/base';
+    public $template = 'admin/index';
 
 	public function action_index()
 	{
-        $this->template->title = 'hello, Admin!';
+        //$this->template->title = 'hello, Admin!';
 	}
 
 } // End Welcome
