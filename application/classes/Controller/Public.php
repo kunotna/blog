@@ -4,9 +4,14 @@ class Controller_Public extends Controller_Base {
     
     public $template = 'public/base';
 
-    public function action_index()
-	{
-		$this->template->title = 'hello, Public!';
-	}
+    public function before() {
+        parent::before();
+        
+        $this->template->title = 'hello, Public!';
+    }
+    
+    public function action_index(){
+        
+    }
 
 } // End Welcome

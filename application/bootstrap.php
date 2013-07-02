@@ -91,6 +91,7 @@ if (isset($_SERVER['KOHANA_ENV']))
  */
 Kohana::init(array(
 	'base_url'   => '/',
+    'index_file' => FALSE,
     'errors'     => TRUE, //This will convert PHP errors into exceptions which are easier to handle
 ));
 
@@ -103,6 +104,11 @@ Kohana::$log->attach(new Log_File(APPPATH.'logs'));
  * Attach a file reader to config. Multiple readers are supported.
  */
 Kohana::$config->attach(new Config_File);
+
+/**
+ * Встановимо сіль для куків
+ */
+Cookie::$salt = 'dfhd4vRg';
 
 /**
  * Enable modules. Modules are referenced by a relative or absolute path.
@@ -123,9 +129,9 @@ Kohana::modules(array(
  * Set the routes. Each route must have a minimum of a name, a URI and a set of
  * defaults for the URI.
  */
-Route::set('auth', '<action>', array('action' => 'auth'))
+Route::set('auth', 'auth')
     ->defaults(array(
-        'directory'  => 'admin',
+        'directory'  => 'public',
         'controller' => 'auth',
     ));
 

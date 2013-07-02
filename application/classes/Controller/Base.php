@@ -2,9 +2,9 @@
 
 class Controller_Base extends Controller_Template {
 
-	public function action_index()
-	{
-		$this->response->body('hello, guest!');
-	}
+	public function before() {
+        parent::before();
+        
+    }
 
 } // End Welcome

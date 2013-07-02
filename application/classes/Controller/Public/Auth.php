@@ -1,8 +1,8 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 
-class Controller_Admin_Auth extends Controller_Admin{
+class Controller_Public_Auth extends Controller_Public {
     
-    public $template = 'admin/auth';
+    public $template = 'public/auth';
 
 	public function action_index()
 	{
