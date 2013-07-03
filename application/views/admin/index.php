@@ -30,7 +30,7 @@
                     </ul>
                 </li>
                 <li class="btn btn-inverse"><a title="" href="#"><i class="icon icon-cog"></i> <span class="text">Настройки</span></a></li>
-                <li class="btn btn-inverse"><a title="" href="login.html"><i class="icon icon-share-alt"></i> <span class="text">Выход</span></a></li>
+                <li class="btn btn-inverse"><a title="" href="logout"><i class="icon icon-share-alt"></i> <span class="text">Выход</span></a></li>
             </ul>
         </div>
             

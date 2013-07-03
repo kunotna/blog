@@ -3,7 +3,7 @@
 class Controller_Admin extends Controller_Base {
     
     public $template = 'admin/index';
-
+    
 	public function before() {
         parent::before();
         
@@ -14,7 +14,6 @@ class Controller_Admin extends Controller_Base {
 		}
     }
     
-    public function action_index(){
-        
-    }
-} // End Welcome
+    public function action_index(){}
+
+}

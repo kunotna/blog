@@ -13,29 +13,29 @@
             <img src="/media/img/logo.png" alt="" />
         </div>
         <div id="loginbox">            
-            <form id="loginform" class="form-vertical" action="index.html" />
-				<p>Enter username and password to continue.</p>
+            <form id="loginform" class="form-vertical" action="auth" method="post" />
+				<p>Введите логин и пароль.</p>
                 <div class="control-group">
                     <div class="controls">
                         <div class="input-prepend">
-                            <span class="add-on"><i class="icon-user"></i></span><input type="text" placeholder="Username" />
+                            <span class="add-on"><i class="icon-user"></i></span><input type="text" name="login" placeholder="Логин" />
                         </div>
                     </div>
                 </div>
                 <div class="control-group">
                     <div class="controls">
                         <div class="input-prepend">
-                            <span class="add-on"><i class="icon-lock"></i></span><input type="password" placeholder="Password" />
+                            <span class="add-on"><i class="icon-lock"></i></span><input type="password" name="password" placeholder="Пароль" />
                         </div>
                     </div>
                 </div>
                 <div class="form-actions">
-                    <span class="pull-left"><a href="#" class="flip-link" id="to-recover">Lost password?</a></span>
-                    <span class="pull-right"><input type="submit" class="btn btn-inverse" value="Login" /></span>
+                    <span class="pull-left"><a href="#" class="flip-link" id="to-recover">Забыл пароль?</a></span>
+                    <span class="pull-right"><input type="submit" name="submit" class="btn btn-inverse" value="Вход" /></span>
                 </div>
             </form>
-            <form id="recoverform" action="#" class="form-vertical" />
-				<p>Enter your e-mail address below and we will send you instructions how to recover a password.</p>
+            <form id="recoverform" action="#" class="form-vertical" method="post" />
+				<p>Введите свой адрес электронной почты ниже, и мы вышлем Вам инструкции, как восстановить пароль.</p>
 				<div class="control-group">
                     <div class="controls">
                         <div class="input-prepend">
@@ -44,8 +44,8 @@
                     </div>
                 </div>
                 <div class="form-actions">
-                    <span class="pull-left"><a href="#" class="flip-link" id="to-login">&lt; Back to login</a></span>
-                    <span class="pull-right"><input type="submit" class="btn btn-inverse" value="Recover" /></span>
+                    <span class="pull-left"><a href="#" class="flip-link" id="to-login">&lt; Вернуться на страницу входа</a></span>
+                    <span class="pull-right"><input type="submit" class="btn btn-inverse" value="Восстановить" /></span>
                 </div>
             </form>
         </div>

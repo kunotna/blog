@@ -133,8 +133,14 @@ Route::set('auth', 'auth')
     ->defaults(array(
         'directory'  => 'public',
         'controller' => 'auth',
+        'action'     => 'login',
     ));
-
+Route::set('authq', 'logout')
+    ->defaults(array(
+        'directory'  => 'public',
+        'controller' => 'auth',
+        'action'     => 'logout',
+    ));
 Route::set('default', '(<controller>(/<action>(/<id>)))')
 	->defaults(array(
 		'controller' => 'public',
