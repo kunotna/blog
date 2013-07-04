@@ -28,6 +28,7 @@ class Controller_Public_Auth extends Controller_Public {
             } else {
                 //TODO:: правила валідації для логіна і пароля
                 $errors = array(Kohana::message('auth/user', 'no_user'));
+                $this->template->errors = $errors;
                 //var_dump($errors);exit;
             }
         }
@@ -37,8 +38,7 @@ class Controller_Public_Auth extends Controller_Public {
                 ->bind('data', $data);*/
 
         // Выводим в шаблон
-        /*$this->template->page_title = 'Вход';
-        $this->template->block_left = null;
+        /*$this->template->block_left = null;
         $this->template->block_center = array($content);
         $this->template->scripts[] = 'media/js/sha1.js';
         $this->template->scripts[] = 'media/js/jquery-1.6.2.min.js';*/

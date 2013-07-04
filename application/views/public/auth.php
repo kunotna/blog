@@ -14,6 +14,14 @@
         </div>
         <div id="loginbox">            
             <form id="loginform" class="form-vertical" action="auth" method="post" />
+                <? if(isset($errors)): ?>
+                    <? foreach ($errors as $error):?>
+                        <div class="alert">
+							<button class="close" data-dismiss="alert">×</button>
+							<?=$error?>
+						</div>
+                    <? endforeach?>
+                <? endif ?>
 				<p>Введите логин и пароль.</p>
                 <div class="control-group">
                     <div class="controls">
