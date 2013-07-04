@@ -141,6 +141,14 @@ Route::set('authq', 'logout')
         'controller' => 'auth',
         'action'     => 'logout',
     ));
+
+Route::set('admin', 'admin(/<controller>(/<action>(/<id>)))(/page)(/<page>)')
+    ->defaults(array(
+        'directory'  => 'admin',
+        'controller' => 'main',
+        'action'     => 'index',
+    ));
+
 Route::set('default', '(<controller>(/<action>(/<id>)))')
 	->defaults(array(
 		'controller' => 'public',

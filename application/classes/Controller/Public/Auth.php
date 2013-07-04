@@ -27,7 +27,8 @@ class Controller_Public_Auth extends Controller_Public {
                 }
             } else {
                 //TODO:: правила валідації для логіна і пароля
-                //$errors = array(Kohana::message('auth/user', 'no_user'));
+                $errors = array(Kohana::message('auth/user', 'no_user'));
+                //var_dump($errors);exit;
             }
         }
 

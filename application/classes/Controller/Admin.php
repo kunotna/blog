@@ -2,7 +2,7 @@
 
 class Controller_Admin extends Controller_Base {
     
-    public $template = 'admin/index';
+    public $template = 'admin/base';
     
 	public function before() {
         parent::before();
@@ -12,8 +12,10 @@ class Controller_Admin extends Controller_Base {
 		{
 			HTTP::redirect('auth');
 		}
+        
+        $this->template->title = 'Unicorn Admin';
     }
     
-    public function action_index(){}
+    //public function action_index(){}
 
 }
