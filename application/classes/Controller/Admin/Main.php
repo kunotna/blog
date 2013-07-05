@@ -31,6 +31,10 @@ class Controller_Admin_Main extends Controller_Admin {
         );
         
         $this->template->title = $this->template->title . ' | главная';
+        
+        $content = View::factory('admin/main/main_index');
+        
+        $this->template->content = $content;
     }
 
 }
