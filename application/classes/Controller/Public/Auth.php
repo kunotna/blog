@@ -5,7 +5,7 @@ class Controller_Public_Auth extends Controller_Public {
     //public $template = 'public/auth/auth_index';
     public $template = 'admin/base';
     
-    public function action_login() {
+    public function action_auth() {
         /*$user = array(
             'username' => 'admin',
             'password' => '1111',

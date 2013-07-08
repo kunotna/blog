@@ -129,17 +129,11 @@ Kohana::modules(array(
  * Set the routes. Each route must have a minimum of a name, a URI and a set of
  * defaults for the URI.
  */
-Route::set('auth', 'auth')
+
+Route::set('auth', '<action>', array('action' => 'auth|logout'))
     ->defaults(array(
         'directory'  => 'public',
         'controller' => 'auth',
-        'action'     => 'login',
-    ));
-Route::set('authq', 'logout')
-    ->defaults(array(
-        'directory'  => 'public',
-        'controller' => 'auth',
-        'action'     => 'logout',
     ));
 
 Route::set('admin', 'admin(/<controller>(/<action>(/<id>)))(/page)(/<page>)')
